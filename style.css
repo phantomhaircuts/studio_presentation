@@ -97,9 +97,10 @@ pre {
 }
 
 .blinking-cursor {
+  margin-left: 20px;
   font-weight: 100;
   font-size: 30px;
-  background-color: #2E3D48;
+  background-color: black;
   color: transparent;
   width: 50px;
   -webkit-animation: 1s blink step-end infinite;
@@ -118,7 +119,7 @@ pre {
   }
 }
 
-@-moz-keyframes blink {
+@-moz-keyframes "blink" {
   from, to {
     background-color: transparent;
   }
