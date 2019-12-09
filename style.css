@@ -55,7 +55,7 @@ width: 50rem;
 background-color: black;
 background-image: radial-gradient(rgba(0, 50, 0, 0.75), black 120%);
 height: 500px;
-margin: 0
+margin: 0 auto;
 color: white;
 font: .75rem 'Source Code Pro', monospace;
 text-shadow: 0 0 5px #C8C8C8;
