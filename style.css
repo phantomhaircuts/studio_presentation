@@ -1,0 +1,155 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  /* max-width: 100%; */
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  color: #6ae244;
+  margin: 0 auto;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+#wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    color: #FFFFFF;
+    font-size: 11px;
+    position: relative;
+    z-index: 100;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.fndrbtn {
+  height: 15px;
+width: 15px;
+margin: 3px;
+background-color:red;
+border-radius: 50%;
+display: inline-block;
+}
+
+nav {
+  height: 20px;
+  width: 100%;
+  background: #d3d3d3;
+  position: fixed;
+  width: 50rem;
+
+}
+.plan {
+overflow: scroll;
+width: 50rem;
+background-color: black;
+background-image: radial-gradient(rgba(0, 50, 0, 0.75), black 120%);
+height: 500px;
+margin: 0
+color: white;
+font: .75rem 'Source Code Pro', monospace;
+text-shadow: 0 0 5px #C8C8C8;
+}
+
+.plan::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+  pointer-events: none;
+}
+
+.plan::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+.terminal-content {
+  padding: 1rem;
+  overflow: scroll;
+}
+
+
+
+pre {
+  margin: 0;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    background-color: #000;
+    opacity: 83%;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  background-color: #2E3D48;
+  color: transparent;
+  width: 50px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
+}
